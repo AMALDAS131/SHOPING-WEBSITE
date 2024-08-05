@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+background-color:black;
+color: grey;
+    font-size:medium;
+    padding: 2rem;
+    text-align: center;
+
+}
+nav{
+background-color: rgb(198, 203, 203);
+padding: 1rem;
+
+}
+nav ul{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    padding: 1rem 1rem;
+    transition: background-color ease-in 0.3s;
+    
+
+}
+nav ul li a:hover{
+    background-color: slateblue;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+    
+    margin: 1rem;
+    
+}
+.products{
+    display: grid;
+    
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    width: 100%;
+    gap: 1rem;
+    transition: transform 0.5sec;
+}
+.product img{
+    height: 80vh;
+    width: 100%;
+    object-fit: cover;   
+}
+.product:hover{
+    transform: translateY(-10px);
+}
+.contact{
+    
+    
+    display: inline-block;
+    color: darkgray;
+    background-color: chocolate;
+    padding: 8px 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color ease-in 0.3sec;
+   
+}
+.contact:hover{
+    background-color: rgb(0, 0, 0);
+}
+.btn{
+    text-decoration: none;
+    color: darkgray;
+}
+.btn{
+    display: inline-block;
+    background-color: chocolate;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+}
+.btn:hover{
+    background-color: blue;
+}
+
+
+
